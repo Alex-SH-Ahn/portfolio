@@ -18,3 +18,23 @@ $(document).ready(function () {
     }
   );
 });
+
+function checkScreenWidth() {
+  const minWidth = 1280;
+  const warning = document.querySelector('.warning');
+  const bookContainer = document.querySelector('.book-container');
+
+  if (window.innerWidth < minWidth) {
+    warning.style.display = 'block';
+    bookContainer.classList.add('hidden');
+    document.body.style.backgroundColor = '#f8f9fa';
+  } else {
+    warning.style.display = 'none';
+    bookContainer.classList.remove('hidden');
+    document.body.style.backgroundColor = '';
+  }
+}
+
+setInterval(checkScreenWidth, 1000);
+
+checkScreenWidth();
