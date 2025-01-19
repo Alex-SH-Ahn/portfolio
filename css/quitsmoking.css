@@ -89,9 +89,8 @@ body {
   width: 100px;
   margin-right: 1vh;
 }
-.language-icons img:nth-child(3) {
-  height: 100px;
-  width: 80px;
+.language-icons img:first-child {
+  margin: 0 0 0 -1vh;
 }
 .quit-desc {
   font-weight: 300;
