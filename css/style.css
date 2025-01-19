@@ -1,0 +1,321 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #F3EEEA;
+
+  font-family: "Newsreader", serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  max-height: 90vh;
+  padding-top: 20px;
+}
+
+.square {
+  width: 98vw;
+  height: 96vh;
+  border: 1px solid #776B5D;
+
+  position: fixed;
+
+  z-index: -9;
+}
+.web-developer {
+  font-size: 35vh;
+  text-align: right;
+  line-height: 20vh;
+  font-weight: 700;
+
+  font-family: "Noto Sans", serif;
+  color: #EBE3D5;
+
+  position: absolute;
+  bottom: 4vh;
+  z-index: -10;
+}
+
+ /* 주의 !! */
+.main {
+  display: flex;
+
+  position: relative;
+  width: 100%;
+  height: 90%;
+
+  /* border: 1px solid green; */
+}
+
+.scroll {
+  /* scroll-padding-top: 20vh; */
+
+  
+  overflow-y: scroll;
+  z-index: 10;
+  
+  width: 90%;
+  padding: 0 5vw;
+  height: 100%;
+  
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #776B5D;
+
+  /* border: 1px solid red; */
+}
+
+#landing {
+
+}
+
+h1, h4, ul, li, pre, p {
+  cursor: default;
+}
+
+.title {
+  font-size: 15vh;
+  margin: 6vh 0 0 0;
+  z-index: 10;
+}
+.sub-title {
+  margin: 0;
+  margin-top: -2vh;
+  font-size: 5vh;
+  font-weight: 400;
+  z-index: 10;
+}
+
+.scroll-list {
+  margin-top: 5vh;
+}
+.scroll-list li {
+  margin: 2vh 0;
+}
+.scroll-list li a {
+  text-decoration: none;
+  color: #776B5D;
+
+  font-size: 4vh;
+  display: inline-block;
+}
+
+/* scroll-list effect */
+.scroll-list li a {
+  position: relative;
+  padding-bottom: 5px;
+}
+.scroll-list li a:before {
+  content: '';
+  position: absolute;
+  background-color: #B0A695;
+  height: 2px;
+  width: 3px;
+  bottom: 0;
+  transition: 0.3s;
+  left: 0;
+}
+.scroll-list li a:hover:before {
+  width: 100%;
+}
+
+.desc {
+  font-family: "Newsreader", serif;
+  text-align: right;
+  font-size: 2.2vh;
+  line-height: 3.5vh;
+  padding-bottom: 30vh;
+}
+.desc span {
+  font-weight: 700;
+}
+
+#aboutme {
+  position: relative;
+}
+.about-me, .about-me-desc {
+  text-align: right;
+  white-space: pre-wrap;
+}
+.about-me {
+  /* padding-top: 30vh; */
+}
+.about-me-desc {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 4vh;
+}
+.skills-section {
+  margin-top: 0;
+  padding-left: 10vh;
+}
+.skill-title {
+
+}
+.skills {
+  font-size: 3vh;
+  line-height: 5vh;
+  font-weight: 300;
+}
+
+#projects {
+  margin: 5vh 0 10vh 0;
+}
+
+.projects-item {
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid #776B5D;
+}
+.projects-item a {
+  text-decoration: none;
+  color: #776B5D
+}
+.project-title {
+  /* border: 1px solid red; */
+  margin-top: 40px;
+  cursor: pointer;
+  display: block;
+}
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  /* border: 1px solid black; */
+}
+.project-desc {
+  font-size: 3vh;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.project-page {
+  font-size: 2.5vh;
+  color: #B0A695;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#contact {
+
+}
+
+.contact {
+  text-align: right;
+}
+.contact-list, .contact-list li a {
+  text-align: right;
+  color: #B0A695;
+  font-size: 3.5vh;
+}
+.contact-list li {
+  margin: 3vh 0;
+}
+.memoji {
+  width: 35vh;
+  padding-bottom: 5vh;
+  /* cursor: pointer; */
+  z-index: 2;
+  display:block;
+  object-fit: cover;
+  position: relative;
+
+  /* border: 1px solid blue; */
+}
+
+.top-button {
+  position: fixed;
+
+  /* float: right; */
+  bottom: 4vh;
+  right: 3.5vh;
+
+  font-size: 3vh;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color:#B0A695;
+
+  font-family: "Newsreader", serif;
+
+  cursor: pointer;
+
+  z-index: 100;
+}
+
+/* highlight effect */
+
+.highlight-container {
+  position: relative;
+  display: inline-block;
+}
+
+.project-title {
+  position: relative;
+  z-index: 15;
+}
+
+.highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4.5vh;
+  width: 0;
+  background-color: #C5D3E8;
+  z-index: 10;
+  transition: width 0.5s ease;
+}
+
+.highlight-container:hover .highlight2 {
+  width: 100%;
+}
+
+.highlight2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3vh; /* Adjust thickness of highlight */
+  background-color: #C5D3E8; /* Highlight color */
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.highlighted-text {
+  position: relative;
+  display: inline-block;
+}
+.highlighted-text::after {
+  content: '';
+  position: absolute;
+  bottom: 1vh;
+  left: 0;
+  width: 0;
+  height: 2.5vh;
+  background-color: #C5D3E8;
+  transition: width 0.5s ease;
+  animation: highlightEffect 0.3s ease 1s forwards;
+  z-index: -1;
+}
+@keyframes highlightEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Full underline */
+  }
+}

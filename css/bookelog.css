@@ -1,0 +1,182 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #F3EEEA;
+
+  font-family: "Newsreader", serif !important;
+}
+.square {
+  width: 98vw;
+  height: 96vh;
+  border: 1px solid #776B5D;
+
+  position: fixed;
+  z-index: -10;
+}
+.web-developer {
+  font-size: 35vh;
+  text-align: right;
+  line-height: 20vh;
+  font-weight: 700;
+
+  font-family: "Noto Sans", serif;
+  color: #EBE3D5;
+
+  position: fixed;
+  bottom: 4vh;
+  z-index: -12;
+}
+
+.book-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-img-book {
+  opacity: 0.4;
+  width: 70%;
+
+  position: absolute;
+  left: -15vh;
+  bottom: 2vh;
+
+  z-index: 1;
+}
+
+.book-content {
+  /* border: 1px solid green; */
+  width: 90vw;
+  height: 95vh;
+  color: #776B5D;
+  z-index: 10;
+
+  text-align-last: right;
+}
+
+/* language */
+.language-div {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+.language-icons {
+  display: flex;
+  align-items: center;
+}
+.language-icons img {
+  height: 100px;
+  margin-right: 1vh;
+}
+.langugae-div .book-desc {
+  margin: 0 2vh 0 0;
+}
+.language-icons img:nth-child(2){
+  margin-right: 0;
+}
+.language-icons img:first-child {
+  margin: 0 2vh 0 1vh;
+}
+
+/* project description */
+.book-desc {
+  font-weight: 300;
+  margin: 2vh 4vh 2vh 0;
+  white-space: pre-wrap;
+}
+.problem-div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 4vh;
+}
+.problem-div p:nth-child(2) {
+  white-space: pre-wrap;
+  line-height: 5vh;
+}
+.problem-div p:first-child {
+  margin-right: 2vh;
+}
+
+.book-content p {
+  font-size: 3vh;
+  font-weight: 350;
+}
+.book-title {
+  font-size: 10vh;
+  font-weight: 500;
+  padding: 5vh 4vh 1.5vh 0;
+  border-bottom: 2px solid #776B5D;
+  margin-bottom: 3vh;
+}
+
+/* github icon */
+.github-icon img {
+  width: 60px;
+  margin: 0;
+  opacity: 0.6;
+}
+.github-icon img:hover {
+  opacity: 1;
+}
+
+.top-button {
+  z-index: 100;
+  position: absolute;
+  bottom: 4vh;
+  right: 3.5vh;
+
+  font-size: 3vh;
+  padding: 1vh 2vh;
+  border-radius: 25px;
+  background-color: #776B5D;
+  color: #EBE3D5;
+  border: 1px solid #776B5D;
+
+  transition: 0.2s;
+}
+.top-button:hover {
+  background-color: #EBE3D5;
+  color: #776B5D;
+  border: 1px solid #776B5D;
+}
+
+/* links */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 3vh 3vh 0 0;
+}
+
+/* address */
+.address {
+  text-decoration: none;
+  font-size: 3vh;
+  font-weight: 300;
+  border: 1.5px solid #776B5D;
+  padding: 1vh 2vh;
+  border-radius: 25px;
+  transition: 0.2s;
+  color:  #776B5D;
+  margin-right: 2vh;
+}
+.address:visited {
+  color: #776B5D;
+}
+.address:hover {
+  background-color: #776B5D;
+  color:#F3EEEA;
+}
