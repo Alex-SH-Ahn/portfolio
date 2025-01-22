@@ -28,10 +28,12 @@ function checkScreenWidth() {
     warning.style.display = 'block';
     bookContainer.classList.add('hidden');
     document.body.style.backgroundColor = '#f8f9fa';
+    document.body.style.overflow = 'hidden';
   } else {
     warning.style.display = 'none';
     bookContainer.classList.remove('hidden');
     document.body.style.backgroundColor = '';
+    document.body.style.overflow = '';
   }
 }
 

@@ -347,3 +347,9 @@ h1, h4, ul, li, pre, p {
 .hidden {
   display: none !important;
 }
+
+/* disable touch */
+
+html, body {
+  touch-action: none;
+}
