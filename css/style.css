@@ -79,10 +79,13 @@ section {
   /* border: 1px solid red; */
 }
 
+/* landing */
 #landing {
 
 }
-
+#landing > pre {
+  font-family: "Courier Prime", serif;
+}
 h1, h4, ul, li, pre, p {
   cursor: default;
 }
@@ -144,6 +147,8 @@ h1, h4, ul, li, pre, p {
   font-weight: 700;
 }
 
+
+/* about me */
 #aboutme {
   position: relative;
 }
@@ -156,8 +161,9 @@ h1, h4, ul, li, pre, p {
 }
 .about-me-desc {
   margin-top: 5px;
-  font-weight: 400;
-  font-size: 4vh;
+  font-weight: 300;
+  font-size: 3vh;
+  line-height: 3.5vh;
 }
 .skills-section {
   margin-top: 0;
@@ -172,6 +178,8 @@ h1, h4, ul, li, pre, p {
   font-weight: 300;
 }
 
+
+/* projects */
 #projects {
   margin: 5vh 0 10vh 0;
 }
@@ -211,6 +219,8 @@ h1, h4, ul, li, pre, p {
   font-family: "Courier Prime", serif;
 }
 
+
+/* contact */
 #contact {
 
 }
@@ -219,7 +229,7 @@ h1, h4, ul, li, pre, p {
   text-align: right;
 }
 .contact-list {
-  margin-bottom: 60vh;
+  margin-bottom: 40vh;
 }
 .contact-list, .contact-list li a {
   text-align: right;
@@ -229,16 +239,12 @@ h1, h4, ul, li, pre, p {
 .contact-list li {
   margin: 3vh 0;
 }
-.memoji {
-  width: 35vh;
-  padding-bottom: 5vh;
-  /* cursor: pointer; */
-  z-index: 2;
-  display:block;
-  object-fit: cover;
-  position: relative;
-
-  /* border: 1px solid blue; */
+.announce {
+  margin-bottom: 5vh;
+  font-size: 1.8vh;
+}
+.bold {
+  font-weight: bold;
 }
 
 .top-button {
