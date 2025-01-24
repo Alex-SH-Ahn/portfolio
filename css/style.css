@@ -204,10 +204,11 @@ h1, h4, ul, li, pre, p {
   cursor: pointer;
 }
 .project-page {
-  font-size: 2.5vh;
+  font-size: 1.8vh;
   color: #B0A695;
   text-decoration: underline;
   cursor: pointer;
+  font-family: "Courier Prime", serif;
 }
 
 #contact {
@@ -352,4 +353,18 @@ h1, h4, ul, li, pre, p {
 
 html, body {
   touch-action: none;
+}
+
+/* project-role */
+.project-title-containter {
+  display: inline-block;
+  width: 50vw;
+  /* border: 1px solid red; */
+}
+
+.project-role {
+  font-size: 1.8vh;
+  display: inline-block;
+  margin-left: 2vh;
+  font-family: "Courier Prime", serif;
 }
