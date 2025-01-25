@@ -96,11 +96,11 @@ body {
   align-items: center;
 }
 .language-icons img {
-  width: 80px;
   margin-right: 1vh;
 }
 .language-icons img:first-child {
   margin: 0 0 0 -1vh;
+  width: 90px;
 }
 .language-icons img:nth-child(2) {
   width: 60px;
