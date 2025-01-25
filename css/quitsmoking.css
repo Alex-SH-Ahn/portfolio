@@ -75,7 +75,7 @@ body {
   display: none;
 }
 .quit-content p {
-  font-size: 2vh;
+  font-size: 21px;
   font-weight: 300;
 }
 .quit-title {
@@ -108,6 +108,7 @@ body {
   font-weight: 300;
   margin: 2vh 2vh 2vh 0;
   white-space: pre-wrap;
+  font-size: 20px;
 }
 .langugae-div .quit-desc {
   margin: 0 2vh 0 0;
@@ -191,7 +192,7 @@ body {
 
 /* quit role */
 .quit-role {
-  background-color: rgba(119, 107, 93, 0.8);
+  background-color: rgba(119, 107, 93, 0.7);
   height: 210vh;
 
   display: flex;
