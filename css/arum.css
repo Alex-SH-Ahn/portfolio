@@ -76,32 +76,36 @@ body {
 }
 .arum-content p {
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 
 /* arum-title-container */
 .arum-title-container {
-  position: relative;
+  border-bottom: 2px solid #776B5D;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .arum-title-container > img {
-  width: 7vh;
-
-  position: absolute;
-  top: 4.5vh;
-}
-.arum-title-container a {
-  position: absolute;
-  left: 20vw;
-  top: 5vh;
-}
-.arum-title-container a img {
-  width: 6vh;
+  width: 6.5vh;
+  margin-right: 1vh;
 }
 .arum-title {
   font-size: 8vh;
   font-weight: 500;
-  padding: 5vh 0 2vh 8vh;
-  border-bottom: 2px solid #776B5D;
+  padding: 5vh 0 3vh 0;
+  display: inline-block;
+
+  /* border: 1px solid green; */
+}
+.title-github img {
+  width: 5vh;
+  margin-left: 2vh;
+  opacity: 0.6;
+}
+.title-github:hover img {
+  opacity: 1;
 }
 
 /* language icons */
@@ -134,19 +138,18 @@ body {
   margin: 0 0 0 1vh;
 }
 .language-icons img:nth-child(5) {
-  width: 120px;
   margin: 0 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .white-blob {
-  width: 75px;
+  width: 95px;
   height: 20px;
-  padding: 1vh 0;
-  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2vh 0 1.5vh 0;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 0;
   z-index: -1;
@@ -154,6 +157,9 @@ body {
 .django-rest {
   margin: 0 2vh;
   position: relative;
+}
+.django-rest img {
+  width: 120px !important;
 }
 .language-icons img:last-child {
   width: 70px;
@@ -184,6 +190,7 @@ body {
 }
 .address:visited {
   color: #776B5D;
+  border: 1.5px solid #F3EEEA;
 }
 .address:hover {
   background-color: #776B5D;
@@ -329,4 +336,8 @@ body {
   justify-content: center;
   text-align: center;
   place-items: center;
+}
+.small {
+  font-size: 18px !important;
+  margin: 1vh 0 1vh 0;
 }
