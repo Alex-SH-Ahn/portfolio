@@ -78,18 +78,37 @@ body {
   font-size: 21px;
   font-weight: 300;
 }
+
+/* arum-title-container */
+.arum-title-container {
+  position: relative;
+}
+.arum-title-container > img {
+  width: 7vh;
+
+  position: absolute;
+  top: 4.5vh;
+}
+.arum-title-container a {
+  position: absolute;
+  left: 20vw;
+  top: 5vh;
+}
+.arum-title-container a img {
+  width: 6vh;
+}
 .arum-title {
   font-size: 8vh;
   font-weight: 500;
-  padding: 5vh 0 3vh 0;
+  padding: 5vh 0 2vh 8vh;
   border-bottom: 2px solid #776B5D;
-  margin-bottom: 4vh;
 }
 
 /* language icons */
 .language-div {
   display: flex;
   align-items: center;
+  margin-top: 2vh;
 }
 .language-icons {
   display: flex;
@@ -112,10 +131,29 @@ body {
 }
 .language-icons img:nth-child(4) {
   width: 50px;
-  margin: 0 1vh;
+  margin: 0 0 0 1vh;
 }
 .language-icons img:nth-child(5) {
   width: 120px;
+  margin: 0 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.white-blob {
+  width: 75px;
+  height: 20px;
+  padding: 1vh 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.django-rest {
+  margin: 0 2vh;
+  position: relative;
 }
 .language-icons img:last-child {
   width: 70px;
@@ -133,15 +171,6 @@ body {
   margin: 0 2vh 0 0;
 }
 
-.problem-div {
-  display: flex;
-  align-items: center;
-}
-.problem-div p:nth-child(2) {
-  white-space: pre-wrap;
-  line-height: 5vh;
-}
-
 .address {
   text-decoration: none;
   font-size: 2vh;
@@ -151,9 +180,15 @@ body {
   border-radius: 25px;
   transition: 0.2s;
   color:  #776B5D;
+  background-color: #F3EEEA;
 }
 .address:visited {
   color: #776B5D;
+}
+.address:hover {
+  background-color: #776B5D;
+  color:#F3EEEA;
+  border: 1.5px solid #F3EEEA;
 }
 
 .links {
@@ -171,10 +206,6 @@ body {
   margin-top: 5px;
 }
 
-.address:hover {
-  background-color: #776B5D;
-  color:#F3EEEA;
-}
 .github-icon img:hover {
   opacity: 1;
 }
@@ -205,24 +236,9 @@ body {
   font-weight: 500 !important;
 }
 
-.arum-top-desc {
-  margin-bottom: 4vh;
-}
-
 /* arum role */
-.arum-role {
-  background-color: rgba(119, 107, 93, 0.7);
-  height: 25vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
-}
 .arum-role p {
-  color: #F3EEEA;
+  color: #776B5D;
 }
 
 /* arum works */
@@ -230,7 +246,7 @@ body {
   width: 70%;
 }
 .arum-works {
-  margin: 4vh 0;
+  margin: 3vh 0;
 }
 .arum-works p:last-child {
   display: inline-block;
@@ -244,20 +260,73 @@ body {
 }
 
 /* reflection */
-
 .arum-reflection {
-  background-color: rgba(119, 107, 93, 0.7);
-  height: 20vh;
-
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
+  margin-top: -7px;
 }
 .arum-reflection p {
   color: #F3EEEA;
   padding: 0;
   line-height: 4vh;
+}
+.arum-reflection p:first-child {
+  margin-right: 1vh;
+}
+
+/* arum-bottom */
+.arum-bottom {
+  background-color: rgba(119, 107, 93, 0.7);
+  z-index: -1;
+  color:#F3EEEA;
+  padding: 6vh 3vh 3vh 3vh;
+  position: relative;
+  margin-top: 3vh;
+
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%);
+}
+
+/* arum-poso-container */
+.arum-poso {
+  font-weight: 300;
+  font-size: 24px !important;
+  line-height: 5vh;
+}
+.arum-poso-container {
+  background-color: rgba(119, 107, 93, 0.7);
+  z-index: -1;
+  color:#F3EEEA;
+  padding: 3vh;
+  mask-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 8%);
+  -webkit-mask-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 8%);
+}
+
+/* arum-role title */
+.title {
+  position: relative;
+  display: inline-block;
+}
+.highlight {
+  background-color: #C5D3E8;
+  position: absolute;
+  bottom: 1vh;
+  left: 0;
+  height: 2.5vh;
+  width: 100%;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+/* arum-works-imgs */
+.quit-works-imgs {
+  margin: 2vh 0 3vh 0;
+
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
 }
