@@ -76,7 +76,7 @@ body {
 }
 .arum-content p {
   font-size: 21px;
-  font-weight: 300 !important;
+  font-weight: 300;
 }
 
 /* arum-title-container */
