@@ -374,17 +374,19 @@ html, body {
   width: 80vw;
   height: 9vh;
 }
-
 .project-role {
   font-size: 1.8vh;
   font-family: "Courier Prime", serif;
 
   display: flex;
   align-items: flex-end;
-  margin-left: 1.5vh;
   margin-bottom: 7px;
-
-  /* border: 1px solid red; */
+}
+.project-role1 {
+  margin-left: 1.5vh;
+}
+.project-role2 {
+  margin-left: 0.1vh;
 }
 
 
